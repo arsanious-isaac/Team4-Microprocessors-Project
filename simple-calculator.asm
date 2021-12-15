@@ -1,3 +1,5 @@
+org 100h
+
 .data   ; .data is used to define variables
 
 
