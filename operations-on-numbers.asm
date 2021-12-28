@@ -104,6 +104,9 @@ pusha
  
  loop addTo
  
+  mov si,0
+  mov cx,5
+
 
 
 
