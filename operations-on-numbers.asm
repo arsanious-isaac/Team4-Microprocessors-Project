@@ -41,8 +41,19 @@ read proc
 
 ;MARK
 checkN proc
+ pusha
+ pushf 
+
+ mov flag, 0
 
 
+ cmp input, '0'
+ jb errorVar 
+ 
+ 
+ popf
+ popa
+  
 
 
 ;MARK
