@@ -53,7 +53,10 @@ checkN proc
  
  popf
  popa
-  
+
+ ret
+ checkN endp 
+
 
 
 ;MARK
