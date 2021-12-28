@@ -89,7 +89,21 @@ avgOperation proc
 
 ;CLARA
 Sort proc
-
+pusha
+ pushf
+ 
+ mov cx,6
+ mov si,0
+ 
+ addTo:
+ 
+ mov dl, nums[si]
+ mov asc[si],dl
+ 
+ inc si
+ 
+ loop addTo
+ 
 
 
 
