@@ -86,6 +86,15 @@ avgOperation proc
 
 
 
+
 ;CLARA
 Sort proc
 
+
+
+
+    Sort endp
+
+
+toEnd:
+    end main  
