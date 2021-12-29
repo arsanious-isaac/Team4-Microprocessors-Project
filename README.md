@@ -9,8 +9,10 @@
 - [Youssef Nazeer Tawfik](https://github.com/Yousef-nazeer)
 
 
-###### Introduction
-This is a simple project that can perform several functions on an array of numbers provided by the user. The program reads 6 digits input in the form of ASCII code e.g: ('7') and not an integer.
+
+#### Introduction
+This is a simple project that can perform several functions on an array of numbers provided by the user. The program reads 6 digits input in the form of ASCII code e.g: ('7') and not an integer. 
+The user chooses an operation to perform from a list. Each operation is denoted by a letter.
 The functions performed by this code are as follows: calculating the summation, the average, finding the greatest & smallest number in the string, sorting it ascendingly or descendingly. The functions can be carried out all at once. This project was coded using most of the assembly language content we learned throughout the microprocessors course with a bit of extra help from internet resources.
 
 
