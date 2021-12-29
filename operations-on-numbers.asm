@@ -3,6 +3,34 @@
 
 ;MINA
 .data   ;define variables
+;Numbers msg
+enterMsg db 10,13,10,13,"Enter 6 numbers <between 0 and 9> ",10,13,"then perform some arithmetic operations on them ",10h,10,13,'$'
+
+num db 10,13,"Enter the number $"
+n   db '1','2','3','4','5','6','$'
+space db 3Ah,09h,'$'
+tyMsg db 10,13,10,13,"thank you for entering all numbers ",03h,10,13,'$'
+finishMsg db 10,13,10,13,"thank you for use my project ",03h,10,13,'$'
+
+;Options msg
+selectMsg db 10,13,10,13,"Please select the operation you need",10,13,"<v,x,n,,d,a,e,s,l,q,r or ? for help> ",10h,'$'
+optionsMsg db                  10,13,
+           db                  "v: for average",10,13,
+           db                  "x: for max",10,13,
+           db                  "n: for min",10,13,
+           db                  "e: for standard deviation",10,13,
+           db                  "a: to show numbers in ascending order",10,13,
+           db                  "d: to show numbers in descending order",10,13,
+           db                  "s: summation of all numbers",10,13,
+           db                  "l: for all the above",10,13,
+           db                  "q: to quit",10,13,
+           db                  "r: to enter 6 new numbers",10,13
+           db                  "?: for help",10,13,'$'
+           
+;Error msg
+errorChar db 10,13,10,13,"Unrecognized character",10,13,'$'
+errorNum db 10,13,10,13 ,"The character you entered is not in the range from 0 to 9",10,13,'$'
+
 
 
 .code   ;the executable part of the program
