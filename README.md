@@ -1,6 +1,7 @@
 # Microprocessors Course
 ## "Operations on an Array of Numbers" Project
-### Team Members
+
+#### Team Members
 - [Arsanios Isaac Helmy](https://github.com/arsaniisaac)
 - [Clara Raef Nasry](https://github.com/Clara-Raef)
 - [Mark Magdy Amin](https://github.com/markmagdy822000)
@@ -8,7 +9,9 @@
 - [Youssef Nazeer Tawfik](https://github.com/Yousef-nazeer)
 
 
-This is a simple project that performs several functions on a string of numbers provided by the user. The functions performed by this code are as follows: calculating the summation, the average, finding the greatest & smallest number in the string, sorting it ascendingly or descendingly. The functions can be carried out all at once. This project was coded using most of the assembly language content we learned throughout the microprocessors course with a bit of extra help from internet resources.
+######Introduction
+This is a simple project that can perform several functions on an array of numbers provided by the user. The program reads 6 digits input in the form of ASCII code e.g: ('7') and not an integer.
+The functions performed by this code are as follows: calculating the summation, the average, finding the greatest & smallest number in the string, sorting it ascendingly or descendingly. The functions can be carried out all at once. This project was coded using most of the assembly language content we learned throughout the microprocessors course with a bit of extra help from internet resources.
 
 
 ### References
