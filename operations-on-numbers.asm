@@ -45,6 +45,9 @@ printC macro character
 ;MINA
 printM macro string
 
+
+
+
 ;Youssef(multiple function)
 ; result = n1*n2
 
@@ -67,7 +70,7 @@ mulO endm
 
 
 ;root function
-;reult = value^0.5
+;result = value^0.5
 root macro value
 pusha
 popf
@@ -121,8 +124,19 @@ checkC proc
 
 
 ;CLARA
-clear proc  
-
+clear proc    
+    
+mov ax, 0     
+mov bx, 0   
+mov dx, 0
+mov cx, 0
+mov si, 0 
+mov di, 0
+mov flag, 0 
+    
+    
+     ret
+    clear endp
 
 
 ;ARSANI
