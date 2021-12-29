@@ -49,8 +49,19 @@ printM macro string
 
 
 ;YOUSSEF
+;root function
+;reult = value^0.5
 root macro value
+pusha
+popf
+call clear
 
+mov dl,value
+mov value,0
+mov regShift,00001000b ;it keeps right sgifting
+mov reg,00001000b ; it keeps track of all steps
+mov save,0
+mov cx,4
 
 
 
