@@ -145,7 +145,7 @@ avgOperation proc
 
 ;CLARA
 Sort proc
-pusha
+ pusha
  pushf
  
  mov cx,6
@@ -160,12 +160,16 @@ pusha
  
  loop addTo
  
+ 
  ; Selection sort
  
  ; 1 2 3 5 4 6
  
+ 
+ 
   mov si,0
   mov cx,5
+  
   p1:
   push cx
   
