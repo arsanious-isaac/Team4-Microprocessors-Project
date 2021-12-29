@@ -45,10 +45,27 @@ printC macro character
 ;MINA
 printM macro string
 
+;Youssef(multiple function)
+; result = n1*n2
+
+mulO macro n1,n2
+pusha
+pushf
+
+mov ax,0;
+mov al,n1
+mul n2   ; the value is stored in AX register
+mov result,al
+
+popf
+popa
+mulO endm
 
 
 
 ;YOUSSEF
+
+
 ;root function
 ;reult = value^0.5
 root macro value
