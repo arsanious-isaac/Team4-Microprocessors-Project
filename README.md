@@ -1,5 +1,5 @@
 # Microprocessors Course
-## "Operations on a String of Numbers" Project
+## "Operations on an Array of Numbers" Project
 ### Team Members
 - [Arsanios Isaac Helmy](https://github.com/arsaniisaac)
 - [Clara Raef Nasry](https://github.com/Clara-Raef)
