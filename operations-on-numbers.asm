@@ -1,6 +1,5 @@
 .model small
 
-
 ;MINA
 .data   ;define variables
 ;Numbers msg
@@ -32,10 +31,7 @@ errorChar db 10,13,10,13,"Unrecognized character",10,13,'$'
 errorNum db 10,13,10,13 ,"The character you entered is not in the range from 0 to 9",10,13,'$'
 
 
-
 .code   ;the executable part of the program
-
-
 
 ;MINA
 printC macro character
@@ -44,7 +40,6 @@ printC macro character
 
 ;MINA
 printM macro string
-
 
 
 
@@ -65,9 +60,7 @@ popa
 mulO endm
 
 
-
 ;YOUSSEF
-
 
 ;root function
 ;result = value^0.5
@@ -123,11 +116,6 @@ popa
 root endm
 
 
-
-
-
-
-
 ;YOUSSEF
 main proc  
 
@@ -158,7 +146,6 @@ checkN proc
  checkN endp 
 
 
-
 ;MARK
 checkC proc
 
@@ -184,28 +171,35 @@ mov flag, 0
 SelectOperation proc
 
 
-
 ;MARK
 StandardOperation proc
 
 
 
-;CLARA
 avgOperation proc
-pusha
+ pusha
  pushf
- 
  mov sum,0
  mov avg,0
- 
  mov cx ,6
  mov si ,0
+ 
+ sumLoop:
+ mov dl, nums[si]
+ sub dl,30h
+ add sum,dl
+ inc si
+ loop sumLoop
+ mov dl,6
+ divO sum,dl
+ mov al , result
+ add al,30h
+ mov avg, al  
+ popf
+ popa
+    ret
+    avgOperation endp
 
-
-
-
-
-;CLARA
 Sort proc
  pusha
  pushf
@@ -218,9 +212,8 @@ Sort proc
  inc si
  
  loop addTo
- 
- ; Selection sort
- 
+
+; Selection sort 
   mov si,0
   mov cx,5
   
