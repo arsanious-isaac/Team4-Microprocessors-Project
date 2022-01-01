@@ -145,16 +145,23 @@ checkN proc
 
  mov flag, 0
 
-
  cmp input, '0'
  jb errorVar 
  
- 
+ cmp input, '9'
+ ja errorVar
+
+ jmp endCheckN
+
+ errorVar:
+ mov flag, 1
+
+ endCheckN:
  popf
  popa
 
- ret
- checkN endp 
+ret
+checkN endp 
 
 
 ;MARK
