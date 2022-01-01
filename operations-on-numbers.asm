@@ -39,6 +39,8 @@ sdMsg db 10,13,"the standard deviation is : $"
 ascMsg db 10,13,"Numbers in ascending order : $"
 desMsg db 10,13,"Number in descending order : $"
 
+allMsg db 's','v','x','n','e','a','d'
+
 
 .code   ;the executable part of the program
 
