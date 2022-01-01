@@ -166,7 +166,28 @@ checkN endp
 
 ;MARK
 checkC proc
-
+pusha
+    pushf 
+    
+    mov flag,0
+    
+    cmp input,'v'
+    je endCheckC 
+    
+    cmp input,'x'
+    je endCheckC
+     
+    cmp input,'n'
+    je endCheckC
+      
+    cmp input,'d'
+    je endCheckC 
+    
+    errorExist:
+    mov flag,1
+    
+    endCheckC:
+    
 
 
 ;CLARA
