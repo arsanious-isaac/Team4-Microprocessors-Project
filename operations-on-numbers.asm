@@ -29,6 +29,15 @@ optionsMsg db                  10,13,
 ;Error msg
 errorChar db 10,13,10,13,"Unrecognized character",10,13,'$'
 errorNum db 10,13,10,13 ,"The character you entered is not in the range from 0 to 9",10,13,'$'
+;Operations msg
+
+sumMsg db 10,13,"The sum of all numbers is :$"
+avgMsg db 10,13,"The average is : $"
+maxMsg db 10,13,"the max number is : $"
+minMsg db 10,13,"The min number is : $"
+sdMsg db 10,13,"the standard deviation is : $"
+ascMsg db 10,13,"Numbers in ascending order : $"
+desMsg db 10,13,"Number in descending order : $"
 
 
 .code   ;the executable part of the program
