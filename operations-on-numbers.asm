@@ -250,13 +250,13 @@ StandardOperation proc
 avgOperation proc
  pusha
  pushf
- mov sum,0
- mov avg,0
+ mov sum,0   ;memory conflicts with nums array~~~
+ mov avg,0   ------------------------------------         
  mov cx ,6
  mov si ,0
  
  sumLoop:
- mov dl, nums[si]
+ mov dl, nums[si] 
  sub dl,30h
  add sum,dl
  inc si
