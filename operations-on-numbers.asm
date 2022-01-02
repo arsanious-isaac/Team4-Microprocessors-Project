@@ -134,8 +134,15 @@ main proc
 
 ;ARSANI
 read proc      
-
-
+    pusha
+    pushf 
+    mov ah,1h
+    int 21h
+    mov input, al       
+    popf
+    popa
+    ret
+    read endp 
 
 
 ;MARK
