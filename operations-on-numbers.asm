@@ -183,11 +183,36 @@ pusha
     cmp input,'d'
     je endCheckC 
     
+    cmp input,'a'
+    je endCheckC
+    
+    cmp input,'e'
+    je endCheckC
+     
+    cmp input,'s'
+    je endCheckC 
+    
+    cmp input,'l'
+    je endCheckC 
+    
+    cmp input,'q'
+    je endCheckC 
+    
+    cmp input,'r'
+    je endCheckC 
+    
+    cmp input,'?'
+    je endCheckC 
+    
     errorExist:
     mov flag,1
     
     endCheckC:
+    popf
+    popa
     
+    ret
+    checkC endp    
 
 
 ;CLARA
